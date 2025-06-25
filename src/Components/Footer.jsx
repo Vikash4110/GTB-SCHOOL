@@ -58,7 +58,7 @@ const Footer = () => {
             <p className="text-blue-200 mb-6">
               A premier educational institution offering Cambridge curriculum to shape global citizens since 1995.
             </p>
-            
+          
           </div>
           
           {/* Quick Links */}
@@ -91,27 +91,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-lg font-bold mb-6">Newsletter</h3>
-            <p className="text-blue-200 mb-4">
-              Subscribe to our newsletter to receive updates about school events and news.
-            </p>
-            <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email" 
-                className="px-4 py-2 w-full rounded-l-lg focus:outline-none text-blue-900"
-                required
-              />
-              <button 
-                type="submit" 
-                className="bg-yellow-500 text-blue-900 px-4 py-2 rounded-r-lg font-semibold hover:bg-yellow-400 transition duration-300"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
+         
         </div>
         
         <div className="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
