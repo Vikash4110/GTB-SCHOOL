@@ -2,28 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!-- Google Font -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#1a365d" />
+    <meta name="description" content="GTB Cambridge World School - Premier educational institution in Guruharsahai offering Cambridge curriculum with modern teaching methodologies" />
+    <meta name="keywords" content="GTB Cambridge, World School, Guruharsahai, Ferozepur, Cambridge School, Best School Punjab" />
+    <meta name="author" content="GTB Cambridge World School" />
+    <meta property="og:title" content="GTB Cambridge World School" />
+    <meta property="og:description" content="Premier educational institution in Guruharsahai offering Cambridge curriculum" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%PUBLIC_URL%/social-share.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/assets/logo-Picsart-AiImageEnhancer copy.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/logo-Picsart-AiImageEnhancer copy.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/logo-Picsart-AiImageEnhancer copy.jpg" />
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#1a365d" />
+    <meta name="msapplication-TileColor" content="#1a365d" />
+    
+    <!-- Preconnect and Preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    
+    <!-- Font Awesome with integrity check -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+    />
+    
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>madrocket-technologies-school</title>
+    
+    <!-- Boxicons with integrity check -->
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" 
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gtbcambridge.edu.in" />
+    
+    <title>GTB Cambridge World School | Premier Education in Guruharsahai</title>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "GTB Road",
+        "addressLocality": "Guruharsahai",
+        "addressRegion": "Punjab",
+        "postalCode": "152022",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="text-align: center; padding: 2rem; background: #f8f9fa; color: #1a365d;">
+        <h1 style="font-size: 1.5rem; margin-bottom: 1rem;">JavaScript is Disabled</h1>
+        <p style="margin-bottom: 1.5rem;">
+          For full functionality of this site, it is necessary to enable JavaScript.
+          Here are the <a href="https://www.enable-javascript.com/" style="color: #3182ce; text-decoration: underline;">
+          instructions how to enable JavaScript in your web browser</a>.
+        </p>
+        <p>
+          Alternatively, you can contact us at <a href="mailto:info@gtbcambridge.edu.in" style="color: #3182ce; text-decoration: underline;">info@gtbcambridge.edu.in</a>
+          or call us at <a href="tel:+919888630984" style="color: #3182ce; text-decoration: underline;">+91 98886 30984</a>.
+        </p>
+      </div>
+    </noscript>
     <div id="root"></div>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="%PUBLIC_URL%/static/css/main.css" as="style" />
+    <link rel="preload" href="%PUBLIC_URL%/static/js/main.js" as="script" />
   </body>
 </html>
