@@ -5,12 +5,6 @@ import Footer from "./Footer";
 const HomePage =()=>{
     return (
         <>  
-        <br/>
-        <br/>
-        <br/>
-        <br/>   
-        <br/>
-        <br/>
         <Home/>
         <Footer/>
       </>
