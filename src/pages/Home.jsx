@@ -31,7 +31,6 @@ const Home = () => {
       <AboutHome/>
       <AcademicsSection/>
       <GallerySection/>
-      <Mandatory/>
       <Footer/>
     </>
   );

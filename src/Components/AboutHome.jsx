@@ -72,12 +72,7 @@ const AboutSection = () => {
                 >
                   Learn More About Us
                 </a>
-                <a
-                  href="/virtual-tour"
-                  className="px-8 py-3 border-2 border-blue-900 text-blue-900 font-semibold rounded-full hover:bg-blue-50 transition duration-300 text-center"
-                >
-                  Take a Virtual Tour
-                </a>
+             
               </div>
             </div>
           </div>

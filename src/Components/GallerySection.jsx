@@ -73,7 +73,7 @@ const GallerySection = () => {
             ))}
           </div>
           
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <a
               href="/gallery"
               className="inline-flex items-center px-8 py-3 border-2 border-blue-900 text-blue-900 font-semibold rounded-full hover:bg-blue-900 hover:text-white transition duration-300"
@@ -83,7 +83,7 @@ const GallerySection = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
               </svg>
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
     );

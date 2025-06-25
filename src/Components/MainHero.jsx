@@ -28,7 +28,7 @@ const MainHero = () => {
               A premier educational institution in Guruharsahai offering Cambridge curriculum to shape global citizens of tomorrow.
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          {/* <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a
               href="#admissions"
               className="bg-yellow-400 text-blue-900 font-semibold px-8 py-4 rounded-full hover:bg-yellow-500 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center"
@@ -41,7 +41,7 @@ const MainHero = () => {
             >
               Virtual Tour
             </a>
-          </div>
+          </div> */}
           
           {/* Quick stats */}
           <div className="mt-12 flex flex-wrap gap-6">

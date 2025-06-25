@@ -4,10 +4,9 @@ const Footer = () => {
   const quickLinks = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
-    { name: "Academics", path: "/academics" },
-    { name: "Admissions", path: "/admissions" },
-    { name: "Facilities", path: "/facilities" },
-    { name: "Gallery", path: "/gallery" }
+    { name: "Mandatory Disclosure", path: "/mandatory" },
+    { name: "Contact Us", path: "/contact" }
+
   ];
 
   const contactInfo = [
@@ -98,11 +97,11 @@ const Footer = () => {
           <p className="text-blue-300 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} GTB Cambridge World School. All Rights Reserved.
           </p>
-          <div className="flex space-x-6">
+          {/* <div className="flex space-x-6">
             <a href="#" className="text-blue-300 hover:text-white text-sm">Privacy Policy</a>
             <a href="#" className="text-blue-300 hover:text-white text-sm">Terms of Service</a>
             <a href="#" className="text-blue-300 hover:text-white text-sm">Sitemap</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
