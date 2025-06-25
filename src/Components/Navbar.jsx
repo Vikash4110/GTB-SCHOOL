@@ -306,12 +306,7 @@ const Header = () => {
     { name: 'Home', path: '/' },
     { 
       name: 'About Us', 
-      submenu: [
-        { name: 'Our Story', path: '/about' },
-        { name: 'Principal\'s Message', path: '/principal' },
-        { name: 'Management', path: '/management' },
-        { name: 'Vision & Mission', path: '/vision' }
-      ]
+      path: '/about' 
     },
     { 
       name: 'Academics', 

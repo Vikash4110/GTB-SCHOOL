@@ -1,137 +1,292 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import Img2 from '../assets/named2.jpg';
-import School from '../assets/school.jpg';
-import Play from '../assets/playground.jpg';
-import Img3 from '../assets/named3.jpg';
-import Footer from "./Footer";
-import 'aos/dist/aos.css';
+import React from 'react';
+import { FaAward, FaGraduationCap, FaUsers, FaBookOpen } from 'react-icons/fa';
+import faculty from '../assets/hero_img2.jpg'
 
-const About = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
-
+const AboutUs = () => {
   return (
-    <>
-      <div className="max-w-7xl mx-auto p-6">
-        <section className="text-center py-12" data-aos="fade-up">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-green-500">About Us</h1>
-          <br />
-          <p className="text-xl text-gray-600">
-            "Founded in 1985, Springdale Public School has been dedicated to providing quality education and holistic development to students."
+    <div className="font-sans">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-blue-800 to-blue-900 text-white py-24">
+        <div className="container mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Our Institution</h1>
+          <p className="text-xl max-w-3xl mx-auto">
+            Discover the legacy, values, and excellence that define GTB Cambridge World School
           </p>
-        </section>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-white transform skew-y-1 -mb-8"></div>
+      </section>
 
-        <section className="py-12 flex flex-col md:flex-row items-center" data-aos="fade-right">
-          <div className="md:w-1/2 p-4">
-            <h2 className="text-3xl font-semibold mb-4 text-green-500">Vision</h2>
-            <p className="text-lg text-gray-600">
-              "To create a learning environment that fosters academic excellence, critical thinking, and ethical values."
+      {/* School Introduction */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+              <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+                OUR STORY
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+                Shaping Futures Since <span className="text-yellow-600">1993</span>
+              </h2>
+              <p className="text-lg text-gray-700 mb-6">
+                Established in 1993, GTB Cambridge World School in Guruharsahai, Ferozepur has been a beacon of quality education, 
+                combining traditional values with modern teaching methodologies to nurture global citizens.
+              </p>
+              <p className="text-lg text-gray-700 mb-8">
+                Our institution is recognized as one of Punjab's premier educational establishments, offering the Cambridge International 
+                Curriculum alongside holistic development programs that prepare students for success in an interconnected world.
+              </p>
+              {/* <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a
+                  href="/admissions"
+                  className="px-8 py-3 bg-yellow-500 text-blue-900 font-semibold rounded-full hover:bg-yellow-400 transition duration-300 text-center"
+                >
+                  Join Our Community
+                </a>
+                <a
+                  href="/virtual-tour"
+                  className="px-8 py-3 border-2 border-blue-900 text-blue-900 font-semibold rounded-full hover:bg-blue-50 transition duration-300 text-center"
+                >
+                  Virtual Campus Tour
+                </a>
+              </div> */}
+            </div>
+            <div className="lg:w-1/2">
+              <div className="relative rounded-xl overflow-hidden shadow-2xl">
+                <img
+                  src={faculty}
+                  alt="GTB Cambridge World School Campus"
+                  className="w-full h-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent flex items-end p-8">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission and Vision */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+              OUR PHILOSOPHY
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+              Guiding <span className="text-yellow-600">Principles</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              The foundation upon which we build excellence in education
             </p>
           </div>
-          <div className="md:w-1/2 p-4">
-            <img src={Img2} alt="Vision" className="rounded-lg shadow-lg w-full h-auto" />
-          </div>
-        </section>
 
-        <section className="py-12 flex flex-col md:flex-row items-center" data-aos="fade-left">
-          <div className="md:w-1/2 p-4">
-            <img src={School} alt="Mission" className="rounded-lg shadow-lg w-full h-auto" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+              <div className="text-yellow-500 text-4xl mb-4">
+                <FaAward />
+              </div>
+              <h3 className="text-xl font-bold text-blue-900 mb-4">Our Vision</h3>
+              <p className="text-gray-700">
+                To be recognized as a center of educational excellence that empowers students to become compassionate leaders, 
+                innovative thinkers, and responsible global citizens who contribute meaningfully to society.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+              <div className="text-yellow-500 text-4xl mb-4">
+                <FaGraduationCap />
+              </div>
+              <h3 className="text-xl font-bold text-blue-900 mb-4">Our Mission</h3>
+              <p className="text-gray-700">
+                To provide a transformative learning experience through the Cambridge curriculum, fostering academic excellence, 
+                character development, and 21st-century skills in a nurturing environment that celebrates diversity and innovation.
+              </p>
+            </div>
           </div>
-          <div className="md:w-1/2 p-4">
-            <h2 className="text-3xl font-semibold mb-4 text-green-500">Mission</h2>
-            <p className="text-lg text-gray-600">
-              "To empower students with the knowledge, skills, and values needed to thrive in a dynamic world."
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+              WHAT WE STAND FOR
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+              Our Core <span className="text-yellow-600">Values</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              The ethical foundation that guides our community
             </p>
           </div>
-        </section>
 
-        <section className="py-12 flex flex-col md:flex-row items-center" data-aos="fade-up">
-          <div className="md:w-1/2 p-4">
-            <h2 className="text-3xl font-semibold mb-4 text-green-500">Principal's Message</h2>
-            <p className="text-lg text-gray-600">
-              "At Springdale, we believe in nurturing the potential of every student and guiding them towards a successful future."
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: <FaUsers className="text-4xl mb-4 text-yellow-500" />,
+                title: "Integrity",
+                description: "We uphold the highest standards of honesty and ethical behavior in all our actions."
+              },
+              {
+                icon: <FaBookOpen className="text-4xl mb-4 text-yellow-500" />,
+                title: "Excellence",
+                description: "We strive for the highest quality in all aspects of teaching, learning, and administration."
+              },
+              {
+                icon: <FaGraduationCap className="text-4xl mb-4 text-yellow-500" />,
+                title: "Respect",
+                description: "We value diversity and treat all individuals with dignity and compassion."
+              },
+              {
+                icon: <FaAward className="text-4xl mb-4 text-yellow-500" />,
+                title: "Innovation",
+                description: "We embrace creativity and progressive thinking to prepare students for the future."
+              }
+            ].map((value, index) => (
+              <div 
+                key={index} 
+                className="bg-gray-50 p-8 rounded-xl text-center hover:transform hover:-translate-y-2 transition duration-300"
+              >
+                {value.icon}
+                <h3 className="text-xl font-bold text-blue-900 mb-3">{value.title}</h3>
+                <p className="text-gray-700">{value.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Section */}
+      {/* <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+              MEET OUR LEADERS
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+              School <span className="text-yellow-600">Leadership</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Experienced educators guiding our institution's vision
             </p>
           </div>
-          <div className="md:w-1/2 p-4">
-            <img src={Play} alt="Principal's Message" className="rounded-lg shadow-lg w-full h-auto" />
-          </div>
-        </section>
 
-        <section className="py-12 bg-blue-500 rounded-2xl" data-aos="fade-up">
-          <h2 className="text-4xl font-semibold mb-8 text-center text-white">Infrastructure and Facilities</h2>
-          <div className="flex flex-wrap justify-center gap-8">
-            <div className="bg-white p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl w-full sm:w-72">
-              <div className="flex items-center mb-4">
-                <svg className="w-6 h-6 text-[#0DC9C5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 20h9v-6h-9v6zm0 0H3v-6h9v6zm0 0v-8H3v8m9 0h9v-8h-9v8z"></path>
-                </svg>
-                <h3 className="text-lg font-semibold">Science and Computer Labs</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Dr. Harpreet Singh",
+                role: "Principal",
+                bio: "With over 25 years in education, Dr. Singh has transformed our academic programs with his visionary leadership.",
+                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+              },
+              {
+                name: "Mrs. Rajinder Kaur",
+                role: "Vice Principal",
+                bio: "Specializing in student welfare, Mrs. Kaur ensures our supportive learning environment thrives.",
+                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+              },
+              {
+                name: "Mr. Amanpreet Sharma",
+                role: "Head of Academics",
+                bio: "Cambridge curriculum expert who oversees our rigorous academic standards and teacher development.",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+              }
+            ].map((leader, index) => (
+              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                <div className="h-64 overflow-hidden">
+                  <img
+                    src={leader.image}
+                    alt={leader.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-900 mb-1">{leader.name}</h3>
+                  <div className="text-yellow-600 font-medium mb-3">{leader.role}</div>
+                  <p className="text-gray-700">{leader.bio}</p>
+                </div>
               </div>
-              <p className="text-sm text-gray-600">
-                Equipped with the latest technology for hands-on learning experiences.
-              </p>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
 
-            <div className="bg-white p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl w-full sm:w-72">
-              <div className="flex items-center mb-4">
-                <svg className="w-6 h-6 text-[#0DC9C5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16m-7 8h7"></path>
-                </svg>
-                <h3 className="text-lg font-semibold">Well-Equipped Classrooms</h3>
+      {/* Accreditation Section */}
+      {/* <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+              RECOGNITION
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+              Our <span className="text-yellow-600">Accreditations</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Quality assurance from leading educational bodies
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center items-center gap-12">
+            {[
+              { 
+                name: "Cambridge Assessment International Education",
+                image: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Cambridge_Assessment_International_Education_logo.svg/1200px-Cambridge_Assessment_International_Education_logo.svg.png",
+                width: "180px"
+              },
+              { 
+                name: "Punjab School Education Board",
+                image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Punjab_School_Education_Board_Logo.png/150px-Punjab_School_Education_Board_Logo.png",
+                width: "120px"
+              },
+              { 
+                name: "International School Award",
+                image: "https://www.britishcouncil.org/sites/default/files/isa_logo_0.png",
+                width: "150px"
+              }
+            ].map((accreditation, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <img 
+                  src={accreditation.image} 
+                  alt={accreditation.name}
+                  style={{ width: accreditation.width }}
+                  className="h-20 object-contain filter grayscale hover:grayscale-0 transition duration-300"
+                />
+                <div className="mt-4 text-sm text-gray-600 text-center">{accreditation.name}</div>
               </div>
-              <p className="text-sm text-gray-600">
-                Designed for a comfortable and engaging learning environment.
-              </p>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
 
-            <div className="bg-white p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl w-full sm:w-72">
-              <div className="flex items-center mb-4">
-                <svg className="w-6 h-6 text-[#0DC9C5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3h14v4H5V3zm0 6h14v10H5V9zm7 4h7v2h-7v-2z"></path>
-                </svg>
-                <h3 className="text-lg font-semibold">Library Collection</h3>
-              </div>
-              <p className="text-sm text-gray-600">
-                Offers a wide range of books and digital resources for all academic needs.
-              </p>
-            </div>
-
-            <div className="bg-white p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl w-full sm:w-72">
-              <div className="flex items-center mb-4">
-                <svg className="w-6 h-6 text-[#0DC9C5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 20l9-7-9-7-9 7 9 7z"></path>
-                </svg>
-                <h3 className="text-lg font-semibold">Sports Facilities</h3>
-              </div>
-              <p className="text-sm text-gray-600">
-                Includes playground, gymnasium, and swimming pool for physical development.
-              </p>
-            </div>
+      {/* Call to Action */}
+      {/* <section className="py-16 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Experience the <span className="text-yellow-400">GTB Cambridge</span> Difference
+          </h2>
+          <p className="text-xl text-blue-200 mb-8 max-w-3xl mx-auto">
+            Schedule a campus visit to see firsthand how we're shaping the future leaders of tomorrow.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a
+              href="/contact"
+              className="px-8 py-4 bg-yellow-500 text-blue-900 font-bold rounded-full hover:bg-yellow-400 transition duration-300"
+            >
+              Book a Visit
+            </a>
+            <a
+              href="/admissions"
+              className="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-blue-900 transition duration-300"
+            >
+              Admission Enquiry
+            </a>
           </div>
-        </section>
-
-        <section className="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" data-aos="zoom-in">
-          <div>
-            <img src={Img2} alt="Infrastructure" className="rounded-lg shadow-lg w-full h-auto" />
-          </div>
-          <div>
-            <img src={School} alt="Facilities" className="rounded-lg shadow-lg w-full h-auto" />
-          </div>
-          <div>
-            <img src={Play} alt="Library" className="rounded-lg shadow-lg w-full h-auto" />
-          </div>
-          <div>
-            <img src={Img3} alt="Playground" className="rounded-lg shadow-lg w-full h-auto" />
-          </div>
-        </section>
-      </div>
-      <Footer />
-    </>
+        </div>
+      </section> */}
+    </div>
   );
-}
+};
 
-export default About;
+export default AboutUs;
