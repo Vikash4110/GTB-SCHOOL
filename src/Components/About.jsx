@@ -286,7 +286,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section> */}
-      <Mandatory/>
     </div>
   );
 };
