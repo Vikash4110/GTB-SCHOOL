@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaAward, FaGraduationCap, FaUsers, FaBookOpen } from 'react-icons/fa';
 import faculty from '../assets/hero_img2.jpg'
+import Mandatory from '../Components/Mandatory'
 
 const AboutUs = () => {
   return (
@@ -285,6 +286,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section> */}
+      <Mandatory/>
     </div>
   );
 };

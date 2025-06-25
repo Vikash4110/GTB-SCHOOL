@@ -7,6 +7,7 @@ import AcademicsSection from "../Components/AcademicSection";
 import Stats from "../Components/Stats";
 import GallerySection from "../Components/GallerySection";
 import AboutHome from "../Components/AboutHome";
+import Mandatory from "../Components/Mandatory";
 import Footer from "../Components/Footer";
 import "aos/dist/aos.css";
 
@@ -30,6 +31,7 @@ const Home = () => {
       <AboutHome/>
       <AcademicsSection/>
       <GallerySection/>
+      <Mandatory/>
       <Footer/>
     </>
   );
