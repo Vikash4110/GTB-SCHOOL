@@ -70,7 +70,7 @@ const MainHero = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-6">
-              <div className="text-white text-xl font-bold">Cambridge IGCSE Curriculum</div>
+              <div className="text-white text-xl font-bold">GTB Cambridge</div>
               <div className="text-yellow-300">Internationally Recognized Education</div>
             </div>
           </div>
