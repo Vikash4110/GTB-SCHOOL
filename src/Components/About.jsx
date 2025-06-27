@@ -11,7 +11,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About Our Institution</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Discover the legacy, values, and excellence that define GTB Cambridge World School
+            Discover the legacy, values, and excellence that define GTB  World School
           </p>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-white transform skew-y-1 -mb-8"></div>
@@ -26,14 +26,14 @@ const AboutUs = () => {
                 OUR STORY
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-                Shaping Futures Since <span className="text-yellow-600">1993</span>
+                Shaping Futures Since <span className="text-yellow-600">1995</span>
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Established in 1993, GTB Cambridge World School in Guruharsahai, Ferozepur has been a beacon of quality education, 
+                Established in 1995, GTB  World School in Guruharsahai, Ferozepur has been a beacon of quality education, 
                 combining traditional values with modern teaching methodologies to nurture global citizens.
               </p>
               <p className="text-lg text-gray-700 mb-8">
-                Our institution is recognized as one of Punjab's premier educational establishments, offering the Cambridge International 
+                Our institution is recognized as one of Punjab's premier educational establishments, offering the  International 
                 Curriculum alongside holistic development programs that prepare students for success in an interconnected world.
               </p>
               {/* <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -55,7 +55,7 @@ const AboutUs = () => {
               <div className="relative rounded-xl overflow-hidden shadow-2xl">
                 <img
                   src={faculty}
-                  alt="GTB Cambridge World School Campus"
+                  alt="GTB  World School Campus"
                   className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent flex items-end p-8">
@@ -100,7 +100,7 @@ const AboutUs = () => {
               </div>
               <h3 className="text-xl font-bold text-blue-900 mb-4">Our Mission</h3>
               <p className="text-gray-700">
-                To provide a transformative learning experience through the Cambridge curriculum, fostering academic excellence, 
+                To provide a transformative learning experience through the curriculum, fostering academic excellence, 
                 character development, and 21st-century skills in a nurturing environment that celebrates diversity and innovation.
               </p>
             </div>

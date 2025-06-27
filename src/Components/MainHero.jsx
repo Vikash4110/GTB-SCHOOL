@@ -22,10 +22,10 @@ const MainHero = () => {
               EST. 1993
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Excellence in <span className="text-yellow-400">Education</span> at GTB Cambridge
+              Excellence in <span className="text-yellow-400">Education</span> at GTB 
             </h1>
             <p className="text-lg md:text-xl mb-8 text-blue-100 max-w-lg">
-              A premier educational institution in Guruharsahai offering Cambridge curriculum to shape global citizens of tomorrow.
+              A premier educational institution in Guruharsahai offering  curriculum to shape global citizens of tomorrow.
             </p>
           </div>
           {/* <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -70,7 +70,7 @@ const MainHero = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-6">
-              <div className="text-white text-xl font-bold">GTB Cambridge</div>
+              <div className="text-white text-xl font-bold">GTB </div>
               <div className="text-yellow-300">Internationally Recognized Education</div>
             </div>
           </div>
@@ -79,7 +79,7 @@ const MainHero = () => {
           <div className="absolute -bottom-8 -right-8 bg-white p-4 rounded-lg shadow-lg">
             <div className="flex items-center space-x-2">
               <div className="text-blue-900 font-bold text-sm">Accredited by:</div>
-              <div className="text-xs font-medium bg-blue-100 text-blue-800 px-2 py-1 rounded">Cambridge</div>
+             
               <div className="text-xs font-medium bg-blue-100 text-blue-800 px-2 py-1 rounded">CBSE</div>
             </div>
           </div>

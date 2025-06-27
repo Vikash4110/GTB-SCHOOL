@@ -9,7 +9,7 @@ const AboutSection = () => {
               <div className="relative rounded-xl overflow-hidden shadow-2xl">
                 <img
                   src={Main}
-                  alt="GTB Cambridge World School Campus"
+                  alt="GTB  World School Campus"
                   className="w-full h-auto"
                 />
                 <div className="absolute -bottom-8 -right-8 bg-yellow-500 text-blue-900 p-6 rounded-lg shadow-lg w-64">
@@ -24,10 +24,10 @@ const AboutSection = () => {
                 ABOUT OUR SCHOOL
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-                Welcome to <span className="text-yellow-600">GTB Cambridge</span> World School
+                Welcome to <span className="text-yellow-600">GTB </span> World School
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Established in 1995, GTB Cambridge World School in Guruharsahai, Ferozepur has been a beacon of quality education, combining traditional values with modern teaching methodologies.
+                Established in 1995, GTB  World School in Guruharsahai, Ferozepur has been a beacon of quality education, combining traditional values with modern teaching methodologies.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -38,7 +38,7 @@ const AboutSection = () => {
                     </svg>
                   </div>
                   <p className="ml-3 text-gray-700">
-                    <span className="font-semibold">Cambridge International Curriculum</span> - Preparing students for IGCSE and A-Level examinations
+                    <span className="font-semibold"> International Curriculum</span> - Preparing students for IGCSE and A-Level examinations
                   </p>
                 </div>
                 
