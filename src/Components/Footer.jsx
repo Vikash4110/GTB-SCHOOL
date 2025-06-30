@@ -87,7 +87,7 @@ const Footer = () => {
                 className="h-12 mr-3"
               />
               <div>
-                <h3 className="text-xl font-bold">GTB World School</h3>
+                <h3 className="text-xl font-bold">G.T.B. Public School</h3>
                 <p className="text-sm text-blue-200">
                   Guru Har Sahai, Ferozepur
                 </p>

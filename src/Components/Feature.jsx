@@ -97,7 +97,7 @@ const FeaturesSection = () => {
             Excellence in <span className="text-yellow-600">Education</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            GTB World School provides a nurturing environment that fosters
+            G.T.B. Public School provides a nurturing environment that fosters
             academic excellence, creativity, and character development.
           </p>
         </div>

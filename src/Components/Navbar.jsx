@@ -61,7 +61,7 @@ const Navbar = () => {
               />
               <div>
                 <h1 className="text-xl font-bold text-blue-900">
-                  GTB World School
+                  G.T.B. Public School
                 </h1>
                 <p className="text-xs text-gray-600">
                   Guru Har Sahai, Ferozepur

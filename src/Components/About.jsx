@@ -32,7 +32,7 @@ const AboutUs = () => {
                 <span className="text-yellow-600">1995</span>
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Established in 1995, GTB World School in Guru Har Sahai,
+                Established in 1995, G.T.B. Public School in Guru Har Sahai,
                 Ferozepur has been a beacon of quality education, combining
                 traditional values with modern teaching methodologies to nurture
                 global citizens.

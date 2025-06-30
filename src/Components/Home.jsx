@@ -11,7 +11,7 @@ import HeroImg5 from "../assets/hero_img5.jpg";
 const slides = [
   {
     image: HeroImg1,
-    title: "Welcome to GTB World School",
+    title: "Welcome to G.T.B. Public School",
     subtitle: "Nurturing Future Leaders in Guru Har Sahai",
   },
   {
