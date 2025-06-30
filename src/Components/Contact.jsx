@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaClock, FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -15,46 +15,49 @@ const ContactUs = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     try {
-      const response = await fetch("https://formsubmit.co/ajax/gtbschool794@gmail.com", {
-        method: "POST",
-        headers: { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          subject: formData.subject,
-          message: formData.message,
-          _subject: "New Contact Form Submission - GTB Cambridge"
-        })
-      });
-      
+      const response = await fetch(
+        "https://formsubmit.co/ajax/gtbschool794@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            subject: formData.subject,
+            message: formData.message,
+            _subject: "New Contact Form Submission - GTB ",
+          }),
+        }
+      );
+
       const data = await response.json();
       if (data.success === "true") {
         setSubmitted(true);
         setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: ''
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
         });
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error("Error submitting form:", error);
     } finally {
       setIsLoading(false);
     }
@@ -65,7 +68,9 @@ const ContactUs = () => {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-800 to-blue-900 text-white py-24">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Our School</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Contact Our School
+          </h1>
           <p className="text-xl max-w-3xl mx-auto">
             We're here to answer your questions and welcome your feedback
           </p>
@@ -84,7 +89,8 @@ const ContactUs = () => {
               How to <span className="text-yellow-600">Reach Us</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our team is available to assist you with admissions, general inquiries, and more
+              Our team is available to assist you with admissions, general
+              inquiries, and more
             </p>
           </div>
 
@@ -94,10 +100,14 @@ const ContactUs = () => {
               <div className="text-yellow-500 text-4xl mb-4 flex justify-center">
                 <FaMapMarkerAlt />
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4 text-center">Our Location</h3>
+              <h3 className="text-xl font-bold text-blue-900 mb-4 text-center">
+                Our Location
+              </h3>
               <address className="text-gray-700 text-center not-italic">
-                GTB Road, Guruharsahai<br />
-                Ferozepur, Punjab 152022<br />
+                GTB Road, Guruharsahai
+                <br />
+                Ferozepur, Punjab 152022
+                <br />
                 India
               </address>
             </div>
@@ -107,13 +117,15 @@ const ContactUs = () => {
               <div className="text-yellow-500 text-4xl mb-4 flex justify-center">
                 <FaPhone />
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4 text-center">Contact Details</h3>
+              <h3 className="text-xl font-bold text-blue-900 mb-4 text-center">
+                Contact Details
+              </h3>
               <div className="text-gray-700 text-center space-y-2">
                 <p>
-                  <strong>Admissions:</strong> +91 98886 30984
+                  <strong>Admissions:</strong> +91 9855430984
                 </p>
                 <p>
-                  <strong>Administration:</strong> +91 98886 30984
+                  <strong>Administration:</strong> +91 9855430984
                 </p>
                 <p>
                   <strong>Email:</strong> gtbschool794@gmail.com
@@ -126,7 +138,9 @@ const ContactUs = () => {
               <div className="text-yellow-500 text-4xl mb-4 flex justify-center">
                 <FaClock />
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4 text-center">Office Hours</h3>
+              <h3 className="text-xl font-bold text-blue-900 mb-4 text-center">
+                Office Hours
+              </h3>
               <div className="text-gray-700 text-center space-y-2">
                 <p>
                   <strong>Monday - Friday:</strong> 8:00 AM - 4:00 PM
@@ -151,8 +165,8 @@ const ContactUs = () => {
               <div className="md:w-1/2 bg-blue-900 text-white p-8">
                 <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
                 <p className="mb-6">
-                  Have questions about admissions, programs, or anything else? Fill out the form and 
-                  we'll respond as soon as possible.
+                  Have questions about admissions, programs, or anything else?
+                  Fill out the form and we'll respond as soon as possible.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start">
@@ -179,15 +193,26 @@ const ContactUs = () => {
                 {submitted ? (
                   <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-6">
                     <strong className="font-bold">Thank you!</strong>
-                    <span className="block sm:inline"> Your message has been sent successfully. We'll get back to you soon.</span>
+                    <span className="block sm:inline">
+                      {" "}
+                      Your message has been sent successfully. We'll get back to
+                      you soon.
+                    </span>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit}>
                     <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
-                    
+                    <input
+                      type="hidden"
+                      name="_next"
+                      value="https://yourwebsite.com/thank-you"
+                    />
+
                     <div className="mb-4">
-                      <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+                      <label
+                        htmlFor="name"
+                        className="block text-gray-700 font-medium mb-2"
+                      >
                         Full Name
                       </label>
                       <input
@@ -202,7 +227,10 @@ const ContactUs = () => {
                       />
                     </div>
                     <div className="mb-4">
-                      <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+                      <label
+                        htmlFor="email"
+                        className="block text-gray-700 font-medium mb-2"
+                      >
                         Email Address
                       </label>
                       <input
@@ -217,7 +245,10 @@ const ContactUs = () => {
                       />
                     </div>
                     <div className="mb-4">
-                      <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
+                      <label
+                        htmlFor="phone"
+                        className="block text-gray-700 font-medium mb-2"
+                      >
                         Phone Number
                       </label>
                       <input
@@ -231,7 +262,10 @@ const ContactUs = () => {
                       />
                     </div>
                     <div className="mb-4">
-                      <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">
+                      <label
+                        htmlFor="subject"
+                        className="block text-gray-700 font-medium mb-2"
+                      >
                         Subject
                       </label>
                       <select
@@ -243,15 +277,26 @@ const ContactUs = () => {
                         required
                       >
                         <option value="">Select a subject</option>
-                        <option value="Admissions Inquiry">Admissions Inquiry</option>
-                        <option value="Academic Programs">Academic Programs</option>
-                        <option value="School Facilities">School Facilities</option>
-                        <option value="Feedback/Suggestions">Feedback/Suggestions</option>
+                        <option value="Admissions Inquiry">
+                          Admissions Inquiry
+                        </option>
+                        <option value="Academic Programs">
+                          Academic Programs
+                        </option>
+                        <option value="School Facilities">
+                          School Facilities
+                        </option>
+                        <option value="Feedback/Suggestions">
+                          Feedback/Suggestions
+                        </option>
                         <option value="Other">Other</option>
                       </select>
                     </div>
                     <div className="mb-6">
-                      <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
+                      <label
+                        htmlFor="message"
+                        className="block text-gray-700 font-medium mb-2"
+                      >
                         Your Message
                       </label>
                       <textarea
@@ -268,9 +313,11 @@ const ContactUs = () => {
                     <button
                       type="submit"
                       disabled={isLoading}
-                      className={`w-full bg-yellow-500 text-blue-900 font-bold py-3 px-4 rounded-lg hover:bg-yellow-400 transition duration-300 ${isLoading ? 'opacity-70 cursor-not-allowed' : ''}`}
+                      className={`w-full bg-yellow-500 text-blue-900 font-bold py-3 px-4 rounded-lg hover:bg-yellow-400 transition duration-300 ${
+                        isLoading ? "opacity-70 cursor-not-allowed" : ""
+                      }`}
                     >
-                      {isLoading ? 'Sending...' : 'Send Message'}
+                      {isLoading ? "Sending..." : "Send Message"}
                     </button>
                   </form>
                 )}
@@ -291,18 +338,22 @@ const ContactUs = () => {
               Convenient ways to reach our campus
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-6 rounded-lg border border-blue-100">
               <h3 className="text-xl font-bold text-blue-900 mb-3">By Road</h3>
               <p className="text-gray-700">
-                Located on GTB Road, Guruharsahai with easy access from Ferozepur (15km) and nearby cities.
+                Located on GTB Road, Guruharsahai with easy access from
+                Ferozepur (15km) and nearby cities.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg border border-blue-100">
-              <h3 className="text-xl font-bold text-blue-900 mb-3">School Buses</h3>
+              <h3 className="text-xl font-bold text-blue-900 mb-3">
+                School Buses
+              </h3>
               <p className="text-gray-700">
-                We operate a fleet of buses covering major routes in Ferozepur district.
+                We operate a fleet of buses covering major routes in Ferozepur
+                district.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg border border-blue-100">
@@ -319,7 +370,9 @@ const ContactUs = () => {
       <section className="py-0 bg-gray-100">
         <div className="container mx-auto px-0">
           <div className="text-center py-8 bg-blue-900 text-white">
-            <h2 className="text-2xl md:text-3xl font-bold mb-2">Our Location</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-2">
+              Our Location
+            </h2>
             <p>Find us easily using the map below</p>
           </div>
           <div className="h-96 w-full">
