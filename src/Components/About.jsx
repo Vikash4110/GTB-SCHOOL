@@ -12,7 +12,7 @@ const AboutUs = () => {
             About Our Institution
           </h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Discover the legacy, values, and excellence that define GTB World
+            Discover the legacy, values, and excellence that define GTB Public
             School
           </p>
         </div>
@@ -62,7 +62,7 @@ const AboutUs = () => {
               <div className="relative rounded-xl overflow-hidden shadow-2xl">
                 <img
                   src={faculty}
-                  alt="GTB  World School Campus"
+                  alt="GTB Public School"
                   className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent flex items-end p-8"></div>

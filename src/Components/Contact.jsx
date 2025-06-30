@@ -383,7 +383,7 @@ const ContactUs = () => {
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
-              title="GTB Cambridge World School Location"
+              title="GTB Public School Location"
             ></iframe>
           </div>
           <div className="bg-blue-900 text-white py-4 text-center">

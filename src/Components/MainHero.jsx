@@ -26,7 +26,7 @@ const MainHero = () => {
               at GTB
             </h1>
             <p className="text-lg md:text-xl mb-8 text-blue-100 max-w-lg">
-              A premier educational institution in Guruharsahai offering
+              A premier educational institution in Guru Har Sahai offering
               curriculum to shape global citizens of tomorrow.
             </p>
           </div>

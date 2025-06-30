@@ -56,7 +56,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center">
               <img
                 src={Logo}
-                alt="GTB  World School Logo"
+                alt="GTB Public School Logo"
                 className="h-12 mr-3"
               />
               <div>
