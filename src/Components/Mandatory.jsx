@@ -756,7 +756,7 @@ const MandatoryDisclosure = () => {
                             className="flex items-center hover:underline"
                           >
                             <FaExternalLinkAlt className="mr-2" />
-                            View {item.docName}
+                            {item.docName}
                           </Link>
                         ) : (
                           <span className="text-gray-500">Not available</span>

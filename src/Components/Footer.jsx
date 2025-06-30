@@ -132,8 +132,7 @@ const Footer = () => {
 
         <div className="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-blue-300 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} GTB Cambridge World School. All Rights
-            Reserved.
+            © {new Date().getFullYear()} GTB Public School. All Rights Reserved.
           </p>
           {/* <div className="flex space-x-6">
             <a href="#" className="text-blue-300 hover:text-white text-sm">Privacy Policy</a>

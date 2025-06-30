@@ -26,13 +26,13 @@ const AboutSection = () => {
               ABOUT OUR SCHOOL
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-              Welcome to <span className="text-yellow-600">GTB </span> World
+              Welcome to <span className="text-yellow-600">GTB </span> Public
               School
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Established in 1995, GTB World School in Guru Har Sahai, Ferozepur
-              has been a beacon of quality education, combining traditional
-              values with modern teaching methodologies.
+              Established in 1995, GTB Public School in Guru Har Sahai,
+              Ferozepur has been a beacon of quality education, combining
+              traditional values with modern teaching methodologies.
             </p>
 
             <div className="space-y-4 mb-8">
