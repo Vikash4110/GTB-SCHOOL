@@ -522,42 +522,45 @@ const MandatoryDisclosure = () => {
       label:
         "COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE",
       path: "/society-registration",
-      docName: "Society Registration Certificate",
+      docName: "https://www.gtbcambridgeworldschool.com/society-registration ",
     },
     {
       label:
         "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT",
       path: "/noc-certificate",
-      docName: "No Objection Certificate",
+      docName: "https://www.gtbcambridgeworldschool.com/noc-certificate",
     },
     {
       label:
         "COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT'S RENEWAL IF APPLICABLE",
       path: "/rte-certificate",
-      docName: "RTE Recognition Certificate",
+      docName: "https://www.gtbcambridgeworldschool.com/rte-certificate",
     },
     {
       label:
         "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE",
       path: "/building-safety-certificate",
-      docName: "Building Safety Certificate",
+      docName:
+        "https://www.gtbcambridgeworldschool.com/building-safety-certificate",
     },
     {
       label:
         "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",
       path: "/fire-safety-certificate",
-      docName: "Fire Safety Certificate",
+      docName:
+        "https://www.gtbcambridgeworldschool.com/fire-safety-certificate",
     },
     {
       label:
         "COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION",
       path: "/self-certification",
-      docName: "Self Certification",
+      docName: "https://www.gtbcambridgeworldschool.com/self-certification",
     },
     {
       label: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
       path: "/water-health-certificate",
-      docName: "Water Health Certificate",
+      docName:
+        "https://www.gtbcambridgeworldschool.com/water-health-certificate",
     },
   ];
 
@@ -566,28 +569,28 @@ const MandatoryDisclosure = () => {
     {
       label: "FEE STRUCTURE OF THE SCHOOL",
       path: "/fee-structure",
-      docName: "Fee Structure",
+      docName: "https://www.gtbcambridgeworldschool.com/fee-structure",
     },
     {
       label: "ANNUAL ACADEMIC CALENDER",
       path: "/academic-calendar",
-      docName: "Academic Calendar",
+      docName: "https://www.gtbcambridgeworldschool.com/academic-calendar",
     },
     {
       label: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)",
       path: "/smc-list",
-      docName: "SMC List",
+      docName: "https://www.gtbcambridgeworldschool.com/smc-list",
     },
     {
       label: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS",
       path: "/pta-list",
-      docName: "PTA List",
+      docName: "https://www.gtbcambridgeworldschool.com/pta-list",
     },
     {
       label:
         "LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABILITY",
       path: "/result",
-      docName: "Last 3-Year Result",
+      docName: "https://www.gtbcambridgeworldschool.com/result",
     },
   ];
 
