@@ -1,5 +1,4 @@
-
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 // Correct image imports
@@ -12,7 +11,7 @@ import HeroImg5 from "../assets/hero_img5.jpg";
 const slides = [
   {
     image: HeroImg1,
-    title: "Welcome to GTB Cambridge World School",
+    title: "Welcome to GTB World School",
     subtitle: "Nurturing Future Leaders in Guru Har Sahai",
   },
   {
@@ -49,14 +48,10 @@ const HeroSection = () => {
   }, []);
 
   const prevSlide = () =>
-    setCurrentSlide((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
-    );
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
 
   const nextSlide = () =>
-    setCurrentSlide((prev) =>
-      prev === slides.length - 1 ? 0 : prev + 1
-    );
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
 
   return (
     <div className="relative w-full h-[600px] overflow-hidden">

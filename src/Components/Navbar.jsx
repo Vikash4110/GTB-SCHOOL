@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../assets/logo-Picsart-AiImageEnhancer copy.jpg';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Logo from "../assets/logo-Picsart-AiImageEnhancer copy.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,38 +12,39 @@ const Navbar = () => {
 
   // Function to handle external link clicks
   const handleExternalLink = (url) => {
-    window.open(url, '_blank');
+    window.open(url, "_blank");
     setIsOpen(false); // Close mobile menu if open
   };
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { 
-      name: 'About Us', 
-      path: '/about' 
+    { name: "Home", path: "/" },
+    {
+      name: "About Us",
+      path: "/about",
     },
-    { 
-      name: 'Mandatory Disclosure', path: '/mandatory'
+    {
+      name: "Mandatory Disclosure",
+      path: "/mandatory",
       // submenu: [
-      //   { 
-      //     name: 'Prospectus', 
-      //     action: () => handleExternalLink('https://drive.google.com/file/d/1DGdxN_xv0Wp43xHgUPkNwU6QBAt0iuug/view?usp=sharing') 
+      //   {
+      //     name: 'Prospectus',
+      //     action: () => handleExternalLink('https://drive.google.com/file/d/1DGdxN_xv0Wp43xHgUPkNwU6QBAt0iuug/view?usp=sharing')
       //   },
-      //   { 
-      //     name: 'Land Certificate', 
-      //     action: () => handleExternalLink('https://drive.google.com/file/d/1mUku4-AdQVZPz9Kpp2z6TEJY7ZnfR0AV/view?usp=sharing') 
+      //   {
+      //     name: 'Land Certificate',
+      //     action: () => handleExternalLink('https://drive.google.com/file/d/1mUku4-AdQVZPz9Kpp2z6TEJY7ZnfR0AV/view?usp=sharing')
       //   },
-      //   { 
-      //     name: 'Bank Certificate', 
-      //     action: () => handleExternalLink('https://drive.google.com/file/d/1Dp6gx_soAX1fyCXyWrwZ9EGIEDYLyfEv/view?usp=sharing') 
+      //   {
+      //     name: 'Bank Certificate',
+      //     action: () => handleExternalLink('https://drive.google.com/file/d/1Dp6gx_soAX1fyCXyWrwZ9EGIEDYLyfEv/view?usp=sharing')
       //   },
-      //   { 
-      //     name: 'NOC', 
-      //     action: () => handleExternalLink('https://drive.google.com/file/d/1WMxdEEmKbk7JdAtu8aV7npF2TJRy14Z9/view?usp=sharing') 
+      //   {
+      //     name: 'NOC',
+      //     action: () => handleExternalLink('https://drive.google.com/file/d/1WMxdEEmKbk7JdAtu8aV7npF2TJRy14Z9/view?usp=sharing')
       //   }
       // ]
     },
-    { name: 'Contact', path: '/contact' }
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -53,14 +54,18 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img 
-                src={Logo} 
-                alt="GTB Cambridge World School Logo" 
+              <img
+                src={Logo}
+                alt="GTB  World School Logo"
                 className="h-12 mr-3"
               />
               <div>
-                <h1 className="text-xl font-bold text-blue-900">GTB Cambridge World School</h1>
-                <p className="text-xs text-gray-600">Guruharsahai, Ferozepur</p>
+                <h1 className="text-xl font-bold text-blue-900">
+                  GTB World School
+                </h1>
+                <p className="text-xs text-gray-600">
+                  Guru Har Sahai, Ferozepur
+                </p>
               </div>
             </Link>
           </div>
@@ -71,17 +76,30 @@ const Navbar = () => {
               <div key={index} className="relative group">
                 {item.submenu ? (
                   <>
-                    <button 
+                    <button
                       onClick={() => toggleDropdown(index)}
                       className="px-4 py-2 text-blue-900 hover:text-yellow-600 font-medium flex items-center"
                     >
                       {item.name}
-                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                      <svg
+                        className="w-4 h-4 ml-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
                       </svg>
                     </button>
-                    <div 
-                      className={`absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 ${dropdownOpen === index ? 'block' : 'hidden'} group-hover:block`}
+                    <div
+                      className={`absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 ${
+                        dropdownOpen === index ? "block" : "hidden"
+                      } group-hover:block`}
                       onMouseLeave={() => setDropdownOpen(null)}
                     >
                       {item.submenu.map((subItem, subIndex) => (
@@ -96,7 +114,7 @@ const Navbar = () => {
                     </div>
                   </>
                 ) : (
-                  <Link 
+                  <Link
                     to={item.path}
                     className="px-4 py-2 text-blue-900 hover:text-yellow-600 font-medium"
                   >
@@ -109,15 +127,31 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button 
+            <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-blue-900 focus:outline-none"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
                 )}
               </svg>
             </button>
@@ -132,13 +166,26 @@ const Navbar = () => {
                 <div key={index}>
                   {item.submenu ? (
                     <>
-                      <button 
+                      <button
                         onClick={() => toggleDropdown(index)}
                         className="w-full px-4 py-2 text-left text-blue-900 font-medium flex justify-between items-center"
                       >
                         {item.name}
-                        <svg className={`w-4 h-4 transition-transform ${dropdownOpen === index ? 'transform rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                        <svg
+                          className={`w-4 h-4 transition-transform ${
+                            dropdownOpen === index ? "transform rotate-180" : ""
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          ></path>
                         </svg>
                       </button>
                       {dropdownOpen === index && (
@@ -156,7 +203,7 @@ const Navbar = () => {
                       )}
                     </>
                   ) : (
-                    <Link 
+                    <Link
                       to={item.path}
                       className="block px-4 py-2 text-blue-900 font-medium"
                       onClick={() => setIsOpen(false)}

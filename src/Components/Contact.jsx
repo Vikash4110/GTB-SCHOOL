@@ -104,7 +104,7 @@ const ContactUs = () => {
                 Our Location
               </h3>
               <address className="text-gray-700 text-center not-italic">
-                GTB Road, Guruharsahai
+                GTB Road, Guru Har Sahai
                 <br />
                 Ferozepur, Punjab 152022
                 <br />
@@ -184,7 +184,7 @@ const ContactUs = () => {
                     </div>
                     <div className="ml-3">
                       <h4 className="font-bold">Call Us</h4>
-                      <p>+91 98886 30984 (Admissions Office)</p>
+                      <p>+91 9855430984 (Admissions Office)</p>
                     </div>
                   </div>
                 </div>
@@ -343,7 +343,7 @@ const ContactUs = () => {
             <div className="bg-gray-50 p-6 rounded-lg border border-blue-100">
               <h3 className="text-xl font-bold text-blue-900 mb-3">By Road</h3>
               <p className="text-gray-700">
-                Located on GTB Road, Guruharsahai with easy access from
+                Located on GTB Road, Guru Har Sahai with easy access from
                 Ferozepur (15km) and nearby cities.
               </p>
             </div>
@@ -387,7 +387,7 @@ const ContactUs = () => {
             ></iframe>
           </div>
           <div className="bg-blue-900 text-white py-4 text-center">
-            <p>GTB Road, Guruharsahai, Ferozepur, Punjab 152022, India</p>
+            <p>GTB Road, Guru Har Sahai, Ferozepur, Punjab 152022, India</p>
           </div>
         </div>
       </section>
@@ -402,7 +402,7 @@ const ContactUs = () => {
             </div>
             <div className="flex space-x-4">
               <a
-                href="tel:+919888630984"
+                href="tel:+9855430984"
                 className="flex items-center px-6 py-2 bg-blue-900 text-white rounded-full hover:bg-blue-800 transition duration-300"
               >
                 <FaPhone className="mr-2" /> Call Now

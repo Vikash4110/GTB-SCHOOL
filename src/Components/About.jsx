@@ -1,7 +1,6 @@
-import React from 'react';
-import { FaAward, FaGraduationCap, FaUsers, FaBookOpen } from 'react-icons/fa';
-import faculty from '../assets/hero_img2.jpg'
-import Mandatory from '../Components/Mandatory'
+import React from "react";
+import { FaAward, FaBookOpen, FaGraduationCap, FaUsers } from "react-icons/fa";
+import faculty from "../assets/hero_img2.jpg";
 
 const AboutUs = () => {
   return (
@@ -9,9 +8,12 @@ const AboutUs = () => {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-800 to-blue-900 text-white py-24">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Our Institution</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            About Our Institution
+          </h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Discover the legacy, values, and excellence that define GTB  World School
+            Discover the legacy, values, and excellence that define GTB World
+            School
           </p>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-white transform skew-y-1 -mb-8"></div>
@@ -26,15 +28,20 @@ const AboutUs = () => {
                 OUR STORY
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-                Shaping Futures Since <span className="text-yellow-600">1995</span>
+                Shaping Futures Since{" "}
+                <span className="text-yellow-600">1995</span>
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Established in 1995, GTB  World School in Guruharsahai, Ferozepur has been a beacon of quality education, 
-                combining traditional values with modern teaching methodologies to nurture global citizens.
+                Established in 1995, GTB World School in Guru Har Sahai,
+                Ferozepur has been a beacon of quality education, combining
+                traditional values with modern teaching methodologies to nurture
+                global citizens.
               </p>
               <p className="text-lg text-gray-700 mb-8">
-                Our institution is recognized as one of Punjab's premier educational establishments, offering the  International 
-                Curriculum alongside holistic development programs that prepare students for success in an interconnected world.
+                Our institution is recognized as one of Punjab's premier
+                educational establishments, offering the International
+                Curriculum alongside holistic development programs that prepare
+                students for success in an interconnected world.
               </p>
               {/* <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <a
@@ -58,9 +65,7 @@ const AboutUs = () => {
                   alt="GTB  World School Campus"
                   className="w-full h-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent flex items-end p-8">
-                  
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent flex items-end p-8"></div>
               </div>
             </div>
           </div>
@@ -87,10 +92,14 @@ const AboutUs = () => {
               <div className="text-yellow-500 text-4xl mb-4">
                 <FaAward />
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">Our Vision</h3>
+              <h3 className="text-xl font-bold text-blue-900 mb-4">
+                Our Vision
+              </h3>
               <p className="text-gray-700">
-                To be recognized as a center of educational excellence that empowers students to become compassionate leaders, 
-                innovative thinkers, and responsible global citizens who contribute meaningfully to society.
+                To be recognized as a center of educational excellence that
+                empowers students to become compassionate leaders, innovative
+                thinkers, and responsible global citizens who contribute
+                meaningfully to society.
               </p>
             </div>
 
@@ -98,10 +107,14 @@ const AboutUs = () => {
               <div className="text-yellow-500 text-4xl mb-4">
                 <FaGraduationCap />
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">Our Mission</h3>
+              <h3 className="text-xl font-bold text-blue-900 mb-4">
+                Our Mission
+              </h3>
               <p className="text-gray-700">
-                To provide a transformative learning experience through the curriculum, fostering academic excellence, 
-                character development, and 21st-century skills in a nurturing environment that celebrates diversity and innovation.
+                To provide a transformative learning experience through the
+                curriculum, fostering academic excellence, character
+                development, and 21st-century skills in a nurturing environment
+                that celebrates diversity and innovation.
               </p>
             </div>
           </div>
@@ -128,30 +141,38 @@ const AboutUs = () => {
               {
                 icon: <FaUsers className="text-4xl mb-4 text-yellow-500" />,
                 title: "Integrity",
-                description: "We uphold the highest standards of honesty and ethical behavior in all our actions."
+                description:
+                  "We uphold the highest standards of honesty and ethical behavior in all our actions.",
               },
               {
                 icon: <FaBookOpen className="text-4xl mb-4 text-yellow-500" />,
                 title: "Excellence",
-                description: "We strive for the highest quality in all aspects of teaching, learning, and administration."
+                description:
+                  "We strive for the highest quality in all aspects of teaching, learning, and administration.",
               },
               {
-                icon: <FaGraduationCap className="text-4xl mb-4 text-yellow-500" />,
+                icon: (
+                  <FaGraduationCap className="text-4xl mb-4 text-yellow-500" />
+                ),
                 title: "Respect",
-                description: "We value diversity and treat all individuals with dignity and compassion."
+                description:
+                  "We value diversity and treat all individuals with dignity and compassion.",
               },
               {
                 icon: <FaAward className="text-4xl mb-4 text-yellow-500" />,
                 title: "Innovation",
-                description: "We embrace creativity and progressive thinking to prepare students for the future."
-              }
+                description:
+                  "We embrace creativity and progressive thinking to prepare students for the future.",
+              },
             ].map((value, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-gray-50 p-8 rounded-xl text-center hover:transform hover:-translate-y-2 transition duration-300"
               >
                 {value.icon}
-                <h3 className="text-xl font-bold text-blue-900 mb-3">{value.title}</h3>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">
+                  {value.title}
+                </h3>
                 <p className="text-gray-700">{value.description}</p>
               </div>
             ))}
