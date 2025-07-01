@@ -647,7 +647,7 @@ const MandatoryDisclosure = () => {
     {
       label:
         "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL",
-      value: "https://youtu.be/mXCoT4K9dnU",
+      value: "https://youtu.be/gT0913ITyuk?si=GNUGvF_mcQamOGIV",
     },
   ];
 
